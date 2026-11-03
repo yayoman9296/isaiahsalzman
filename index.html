@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isaiah Salzman — Author of 2060 NY</title>
+<meta name="description" content="A lonely mechanic, an underground resistance, and an asteroid storm that may be no accident. 2060 NY, a dystopian thriller by Isaiah Salzman.">
+<link rel="canonical" href="https://yayoman9296.github.io/isaiahsalzman/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Isaiah Salzman">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Isaiah Salzman">
+<meta property="og:title" content="Isaiah Salzman — Author of 2060 NY">
+<meta property="og:description" content="A lonely mechanic, an underground resistance, and an asteroid storm that may be no accident. 2060 NY, a dystopian thriller by Isaiah Salzman.">
+<meta property="og:url" content="https://yayoman9296.github.io/isaiahsalzman/">
+<meta property="og:image" content="https://yayoman9296.github.io/isaiahsalzman/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="2060 NY by Isaiah Salzman: neon title over a night Manhattan skyline">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Isaiah Salzman — Author of 2060 NY">
+<meta name="twitter:description" content="A lonely mechanic, an underground resistance, and an asteroid storm that may be no accident. 2060 NY, a dystopian thriller by Isaiah Salzman.">
+<meta name="twitter:image" content="https://yayoman9296.github.io/isaiahsalzman/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yayoman9296.github.io/isaiahsalzman/#author",
+      "name": "Isaiah Salzman",
+      "url": "https://yayoman9296.github.io/isaiahsalzman/",
+      "email": "mailto:isaiahsalzman@gmail.com",
+      "jobTitle": "Author",
+      "description": "Fourth-generation New Yorker and author of the debut novel 2060 NY."
+    },
+    {
+      "@type": "Book",
+      "@id": "https://yayoman9296.github.io/isaiahsalzman/#book",
+      "name": "2060 NY",
+      "author": { "@id": "https://yayoman9296.github.io/isaiahsalzman/#author" },
+      "genre": ["Dystopian fiction", "Science fiction", "Thriller"],
+      "inLanguage": "en",
+      "description": "When a lonely nineteen-year-old mechanic joins an underground resistance in 2060 Manhattan, he must build a homemade ship to destroy the magnet they swear is pulling an asteroid storm down on Earth, while working as his boss's enforcer, firing a coworker every week to save his best friend's job."
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Theme tokens — swap here. Set data-theme="light" on <html> for the light theme. ===== */
+:root{
+  --bg:#05060d; --bg-alt:#0a0d1c; --surface:#0f1326; --line:#1f2542;
+  --text:#e9ecf5; --muted:#a3abc4;
+  --accent:#ff2bd6;      /* neon magenta */
+  --accent-2:#22e4ff;    /* electric cyan */
+  --accent-ink:#14000f;
+  --glow-a:0 0 6px rgba(255,43,214,.55),0 0 22px rgba(255,43,214,.35);
+  --glow-b:0 0 6px rgba(34,228,255,.55),0 0 22px rgba(34,228,255,.3);
+  --sky:linear-gradient(180deg,#05060d 0%,#0b0e24 55%,#1a0b2e 82%,#2a0d36 100%);
+  --skyline:#03040a; --window:#ffd27a;
+  --overlay-opacity:.07;
+  --ph-bg:rgba(34,228,255,.07); --ph-line:rgba(34,228,255,.4);
+  --font-title:"Orbitron","Oswald",system-ui,sans-serif;
+  --font-display:"Oswald","Arial Narrow",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:68rem; --radius:4px;
+}
+[data-theme="light"]{
+  --bg:#f5f4fa; --bg-alt:#ebe9f3; --surface:#ffffff; --line:#d6d3e3;
+  --text:#14121f; --muted:#4d4a5e;
+  --accent:#b0008f; --accent-2:#006b80; --accent-ink:#ffffff;
+  --glow-a:none; --glow-b:none;
+  --sky:linear-gradient(180deg,#f5f4fa 0%,#e8e4f6 70%,#f3dff0 100%);
+  --skyline:#2a2540; --window:#f5f4fa;
+  --overlay-opacity:0;
+  --ph-bg:rgba(0,107,128,.06); --ph-line:rgba(0,107,128,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.7 var(--font-body);-webkit-font-smoothing:antialiased;position:relative}
+/* scanline + grain overlay */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:var(--overlay-opacity);
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.9) 0 1px,transparent 1px 3px),
+  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode:overlay}
+a{color:var(--accent-2);text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--accent-ink);padding:.6rem 1rem;z-index:60}
+.skip:focus{left:1rem;top:1rem}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem;position:relative}
+.ph{background:var(--ph-bg);border:1px dashed var(--ph-line);border-radius:var(--radius);padding:.15rem .45rem;color:var(--muted)}
+.tag{font:600 .7rem/1 var(--font-body);letter-spacing:.08em;color:var(--accent-2);border:1px solid var(--accent-2);padding:.15rem .35rem;border-radius:2px;margin-right:.45rem;vertical-align:1px}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:3.75rem}
+.brand{font:500 1.15rem/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--text);text-decoration:none}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+nav a{color:var(--muted);text-decoration:none;font:500 .82rem/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase}
+nav a:hover{color:var(--accent-2)}
+@media (max-width:640px){nav ul{gap:.9rem} nav li:nth-child(n+3){display:none}}
+
+/* hero */
+.hero{background:var(--sky);padding:clamp(4rem,10vw,7.5rem) 0 clamp(11rem,22vw,17rem);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.streaks{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.streaks i{position:absolute;top:-20%;width:2px;height:180px;border-radius:2px;
+  background:linear-gradient(180deg,transparent,rgba(34,228,255,.0) 10%,var(--accent-2));
+  filter:drop-shadow(0 0 6px var(--accent-2));transform:rotate(28deg);opacity:.0;
+  animation:fall 9s linear infinite}
+.streaks i:nth-child(2n){background:linear-gradient(180deg,transparent,var(--accent));filter:drop-shadow(0 0 6px var(--accent))}
+.streaks i:nth-child(1){left:62%;animation-delay:0s}
+.streaks i:nth-child(2){left:80%;height:120px;animation-delay:2.5s;animation-duration:11s}
+.streaks i:nth-child(3){left:44%;height:90px;animation-delay:5s;animation-duration:13s}
+.streaks i:nth-child(4){left:92%;animation-delay:6.5s}
+.streaks i:nth-child(5){left:70%;height:70px;animation-delay:8s;animation-duration:12s}
+@keyframes fall{0%{transform:translate(0,0) rotate(28deg);opacity:0}8%{opacity:.85}60%{opacity:.6}100%{transform:translate(-420px,820px) rotate(28deg);opacity:0}}
+/* static streaks for reduced motion / screenshots */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .streaks i{animation:none;opacity:.55}
+  .streaks i:nth-child(1){top:8%} .streaks i:nth-child(2){top:20%} .streaks i:nth-child(3){top:4%}
+  .streaks i:nth-child(4){top:30%} .streaks i:nth-child(5){top:42%}
+}
+.skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(140px,22vw,240px);display:block}
+.skyline .b{fill:var(--skyline)}
+.skyline .w{fill:var(--window);opacity:.55}
+.skyline .edge{fill:none;stroke:var(--accent);stroke-width:1.2;opacity:.55;filter:drop-shadow(0 0 4px var(--accent))}
+.eyebrow{font:500 .82rem/1 var(--font-display);letter-spacing:.32em;text-transform:uppercase;color:var(--accent-2);text-shadow:var(--glow-b);margin:0 0 1.4rem}
+.hero h1{font:800 clamp(3.2rem,12vw,8rem)/.95 var(--font-title);margin:0;letter-spacing:.02em;text-shadow:var(--glow-a);color:var(--text)}
+.hero h1 .yr{color:var(--accent)}
+.hero .author{font:500 clamp(1.1rem,2.6vw,1.5rem)/1.3 var(--font-display);letter-spacing:.24em;text-transform:uppercase;margin:1.1rem 0 1.8rem}
+.hero .logline{max-width:40rem;font-size:1.12rem;margin:0 0 1.6rem}
+.status{font-size:.9rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:var(--radius);font:500 .95rem/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--accent);cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:var(--glow-a)}
+.btn-ghost{color:var(--accent-2);border-color:var(--accent-2);background:rgba(5,6,13,.35);box-shadow:var(--glow-b)}
+[data-theme="light"] .btn-ghost{background:transparent}
+.btn:hover{filter:brightness(1.1)}
+.hero-sample{margin:1.4rem 0 0;font-size:.95rem}
+
+/* sections */
+section{padding:clamp(3.5rem,8vw,6rem) 0;border-bottom:1px solid var(--line)}
+section.alt{background:var(--bg-alt)}
+.kicker{font:500 .8rem/1 var(--font-display);letter-spacing:.3em;text-transform:uppercase;color:var(--accent-2);margin:0 0 .9rem}
+h2{font:600 clamp(2rem,5vw,3.1rem)/1.05 var(--font-display);text-transform:uppercase;letter-spacing:.04em;margin:0 0 1.4rem;text-shadow:var(--glow-a)}
+.grid{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
+@media (max-width:760px){.grid{grid-template-columns:1fr} .cover,.monogram{max-width:14rem}}
+.cover{aspect-ratio:2/3;border:1px solid var(--accent);border-radius:var(--radius);background:linear-gradient(170deg,var(--surface),var(--bg) 70%);display:flex;flex-direction:column;justify-content:space-between;padding:1.4rem;position:relative;overflow:hidden;box-shadow:var(--glow-a)}
+.cover::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 22px,rgba(34,228,255,.06) 22px 23px)}
+.cover b{font:800 2.3rem/1 var(--font-title);position:relative;color:var(--text);text-shadow:var(--glow-a)}
+.cover span{position:relative;font:500 .78rem/1.3 var(--font-display);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.meta{font-size:.92rem;color:var(--muted);margin:0 0 1.5rem;padding-bottom:1.25rem;border-bottom:1px solid var(--line)}
+.blurb p{max-width:40rem;margin:0 0 1.1rem}
+.comps{margin:1.75rem 0 0;padding:1rem 1.2rem;border-left:2px solid var(--accent-2);background:var(--surface);font-size:1rem;max-width:40rem}
+.comps cite{font-style:normal;font-family:var(--font-display);letter-spacing:.06em;color:var(--accent-2)}
+.monogram{aspect-ratio:1;border:1px solid var(--accent-2);border-radius:50%;display:grid;place-items:center;font:800 clamp(3rem,9vw,4.5rem)/1 var(--font-title);color:var(--accent-2);text-shadow:var(--glow-b);box-shadow:var(--glow-b),inset 0 0 30px rgba(34,228,255,.12);max-width:13rem}
+
+/* newsletter */
+.signup{max-width:36rem}
+.sample-cta{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:0 0 3rem;padding:1.4rem;border:1px solid var(--accent);border-radius:var(--radius);background:var(--surface);box-shadow:var(--glow-a)}
+.sample-cta p{margin:0;font-size:.95rem;color:var(--muted);flex:1 1 14rem}
+.btn-lg{padding:1rem 1.8rem;font-size:1.05rem}
+.signup form{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.25rem}
+.signup label{flex-basis:100%;font-size:.9rem;color:var(--muted)}
+.signup input[type=email]{flex:1 1 16rem;min-height:2.9rem;padding:.7rem .9rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit}
+.signup input[type=email]::placeholder{color:#7d84a0}
+.signup input[type=email]:focus{border-color:var(--accent-2);outline:none;box-shadow:var(--glow-b)}
+.fineprint{font-size:.82rem;color:var(--muted);margin-top:.9rem}
+
+/* contact & footer */
+.contact-mail{font:500 clamp(1.3rem,4vw,2rem)/1.2 var(--font-display);letter-spacing:.04em;word-break:break-word;text-shadow:var(--glow-b)}
+footer{padding:2.5rem 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">Isaiah Salzman</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#book">The Book</a></li>
+        <li><a href="#author">About</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <div class="hero" id="top">
+      <div class="streaks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wrap">
+      <p class="eyebrow">A novel · Manhattan · 2060</p>
+      <h1><span class="yr">2060</span> NY</h1>
+      <p class="author">Isaiah Salzman</p>
+      <p class="logline">When a lonely nineteen-year-old mechanic joins an underground resistance in 2060 Manhattan, he must build a homemade ship to destroy the magnet they swear is pulling an asteroid storm down on Earth, while working as his boss's enforcer, firing a coworker every week to save his best friend's job.</p>
+      <p class="status">Debut novel · currently on submission to literary agents</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#newsletter">Join the newsletter</a>
+        <a class="btn btn-ghost" href="#book">About the book</a>
+      </div>
+      <p class="hero-sample"><a href="Salzman_2060NY_Chapter1.pdf" download>Read Chapter One (PDF) &darr;</a></p>
+    </div>
+    <svg class="skyline" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+      <rect class="b" x="0" y="161" width="48" height="79"/><rect class="b" x="52" y="143" width="36" height="97"/><rect class="b" x="89" y="91" width="39" height="149"/><rect class="b" x="131" y="89" width="46" height="151"/><rect class="b" x="181" y="130" width="53" height="110"/><rect class="b" x="238" y="83" width="29" height="157"/><rect class="b" x="269" y="177" width="29" height="63"/><rect class="b" x="300" y="152" width="33" height="88"/><rect class="b" x="334" y="79" width="55" height="161"/><rect class="b" x="393" y="109" width="61" height="131"/><rect class="b" x="455" y="74" width="70" height="166"/><rect class="b" x="525" y="110" width="60" height="130"/><rect class="b" x="587" y="30" width="60" height="210"/><rect class="b" x="599" y="8" width="36" height="24"/><rect class="b" x="611" y="-18" width="12" height="28"/><rect class="b" x="616" y="-48" width="2" height="32"/><rect class="b" x="647" y="93" width="58" height="147"/><rect class="b" x="706" y="136" width="54" height="104"/><rect class="b" x="760" y="87" width="31" height="153"/><rect class="b" x="795" y="110" width="59" height="130"/><rect class="b" x="854" y="130" width="32" height="110"/><rect class="b" x="886" y="81" width="63" height="159"/><rect class="b" x="949" y="130" width="39" height="110"/><rect class="b" x="989" y="135" width="52" height="105"/><rect class="b" x="1043" y="40" width="54" height="200"/><polygon class="b" points="1049,40 1070,-6 1091,40"/><rect class="b" x="1069" y="-40" width="2" height="36"/><rect class="b" x="1097" y="40" width="54" height="200"/><polygon class="b" points="1103,40 1124,-6 1145,40"/><rect class="b" x="1123" y="-40" width="2" height="36"/><rect class="b" x="1153" y="82" width="57" height="158"/><rect class="b" x="1214" y="81" width="68" height="159"/><rect class="b" x="1284" y="82" width="35" height="158"/><rect class="b" x="1320" y="102" width="46" height="138"/><rect class="b" x="1367" y="175" width="28" height="65"/><rect class="b" x="1396" y="128" width="37" height="112"/><rect class="b" x="1433" y="138" width="35" height="102"/>
+      <rect class="w" x="16" y="171" width="3" height="5"/><rect class="w" x="36" y="171" width="3" height="5"/><rect class="w" x="36" y="185" width="3" height="5"/><rect class="w" x="36" y="199" width="3" height="5"/><rect class="w" x="6" y="227" width="3" height="5"/><rect class="w" x="26" y="227" width="3" height="5"/><rect class="w" x="78" y="167" width="3" height="5"/><rect class="w" x="78" y="181" width="3" height="5"/><rect class="w" x="105" y="101" width="3" height="5"/><rect class="w" x="105" y="129" width="3" height="5"/><rect class="w" x="115" y="157" width="3" height="5"/><rect class="w" x="105" y="199" width="3" height="5"/><rect class="w" x="115" y="199" width="3" height="5"/><rect class="w" x="115" y="213" width="3" height="5"/><rect class="w" x="157" y="99" width="3" height="5"/><rect class="w" x="147" y="113" width="3" height="5"/><rect class="w" x="157" y="113" width="3" height="5"/><rect class="w" x="137" y="127" width="3" height="5"/><rect class="w" x="137" y="141" width="3" height="5"/><rect class="w" x="167" y="169" width="3" height="5"/><rect class="w" x="157" y="197" width="3" height="5"/><rect class="w" x="167" y="225" width="3" height="5"/><rect class="w" x="197" y="140" width="3" height="5"/><rect class="w" x="217" y="140" width="3" height="5"/><rect class="w" x="227" y="140" width="3" height="5"/><rect class="w" x="217" y="154" width="3" height="5"/><rect class="w" x="227" y="154" width="3" height="5"/><rect class="w" x="187" y="168" width="3" height="5"/><rect class="w" x="197" y="168" width="3" height="5"/><rect class="w" x="217" y="168" width="3" height="5"/><rect class="w" x="197" y="182" width="3" height="5"/><rect class="w" x="187" y="196" width="3" height="5"/><rect class="w" x="187" y="210" width="3" height="5"/><rect class="w" x="197" y="210" width="3" height="5"/><rect class="w" x="197" y="224" width="3" height="5"/><rect class="w" x="227" y="224" width="3" height="5"/><rect class="w" x="306" y="162" width="3" height="5"/><rect class="w" x="306" y="190" width="3" height="5"/><rect class="w" x="326" y="204" width="3" height="5"/><rect class="w" x="350" y="89" width="3" height="5"/><rect class="w" x="350" y="103" width="3" height="5"/><rect class="w" x="360" y="103" width="3" height="5"/><rect class="w" x="380" y="103" width="3" height="5"/><rect class="w" x="360" y="131" width="3" height="5"/><rect class="w" x="380" y="131" width="3" height="5"/><rect class="w" x="360" y="145" width="3" height="5"/><rect class="w" x="380" y="145" width="3" height="5"/><rect class="w" x="370" y="159" width="3" height="5"/><rect class="w" x="340" y="187" width="3" height="5"/><rect class="w" x="370" y="201" width="3" height="5"/><rect class="w" x="380" y="201" width="3" height="5"/><rect class="w" x="340" y="229" width="3" height="5"/><rect class="w" x="350" y="229" width="3" height="5"/><rect class="w" x="370" y="229" width="3" height="5"/><rect class="w" x="380" y="229" width="3" height="5"/><rect class="w" x="429" y="119" width="3" height="5"/><rect class="w" x="399" y="133" width="3" height="5"/><rect class="w" x="409" y="133" width="3" height="5"/><rect class="w" x="429" y="133" width="3" height="5"/><rect class="w" x="399" y="147" width="3" height="5"/><rect class="w" x="439" y="203" width="3" height="5"/><rect class="w" x="399" y="231" width="3" height="5"/><rect class="w" x="429" y="231" width="3" height="5"/><rect class="w" x="461" y="98" width="3" height="5"/><rect class="w" x="491" y="112" width="3" height="5"/><rect class="w" x="471" y="126" width="3" height="5"/><rect class="w" x="481" y="168" width="3" height="5"/><rect class="w" x="491" y="168" width="3" height="5"/><rect class="w" x="481" y="182" width="3" height="5"/><rect class="w" x="491" y="182" width="3" height="5"/><rect class="w" x="481" y="196" width="3" height="5"/><rect class="w" x="511" y="224" width="3" height="5"/><rect class="w" x="541" y="162" width="3" height="5"/><rect class="w" x="531" y="176" width="3" height="5"/><rect class="w" x="571" y="176" width="3" height="5"/><rect class="w" x="541" y="204" width="3" height="5"/><rect class="w" x="571" y="204" width="3" height="5"/><rect class="w" x="571" y="218" width="3" height="5"/><rect class="w" x="613" y="40" width="3" height="5"/><rect class="w" x="613" y="54" width="3" height="5"/><rect class="w" x="633" y="54" width="3" height="5"/><rect class="w" x="633" y="68" width="3" height="5"/><rect class="w" x="613" y="82" width="3" height="5"/><rect class="w" x="603" y="110" width="3" height="5"/><rect class="w" x="613" y="138" width="3" height="5"/><rect class="w" x="623" y="152" width="3" height="5"/><rect class="w" x="633" y="152" width="3" height="5"/><rect class="w" x="633" y="166" width="3" height="5"/><rect class="w" x="593" y="180" width="3" height="5"/><rect class="w" x="593" y="194" width="3" height="5"/><rect class="w" x="623" y="194" width="3" height="5"/><rect class="w" x="663" y="103" width="3" height="5"/><rect class="w" x="693" y="117" width="3" height="5"/><rect class="w" x="683" y="131" width="3" height="5"/><rect class="w" x="683" y="159" width="3" height="5"/><rect class="w" x="663" y="173" width="3" height="5"/><rect class="w" x="683" y="187" width="3" height="5"/><rect class="w" x="693" y="187" width="3" height="5"/><rect class="w" x="663" y="215" width="3" height="5"/><rect class="w" x="663" y="229" width="3" height="5"/><rect class="w" x="722" y="146" width="3" height="5"/><rect class="w" x="742" y="160" width="3" height="5"/><rect class="w" x="722" y="174" width="3" height="5"/><rect class="w" x="752" y="174" width="3" height="5"/><rect class="w" x="752" y="188" width="3" height="5"/><rect class="w" x="732" y="202" width="3" height="5"/><rect class="w" x="752" y="216" width="3" height="5"/><rect class="w" x="766" y="111" width="3" height="5"/><rect class="w" x="776" y="209" width="3" height="5"/><rect class="w" x="776" y="223" width="3" height="5"/><rect class="w" x="841" y="120" width="3" height="5"/><rect class="w" x="811" y="134" width="3" height="5"/><rect class="w" x="831" y="134" width="3" height="5"/><rect class="w" x="841" y="162" width="3" height="5"/><rect class="w" x="821" y="176" width="3" height="5"/><rect class="w" x="841" y="204" width="3" height="5"/><rect class="w" x="801" y="218" width="3" height="5"/><rect class="w" x="870" y="182" width="3" height="5"/><rect class="w" x="870" y="196" width="3" height="5"/><rect class="w" x="892" y="91" width="3" height="5"/><rect class="w" x="892" y="105" width="3" height="5"/><rect class="w" x="932" y="105" width="3" height="5"/><rect class="w" x="942" y="105" width="3" height="5"/><rect class="w" x="942" y="119" width="3" height="5"/><rect class="w" x="942" y="147" width="3" height="5"/><rect class="w" x="902" y="175" width="3" height="5"/><rect class="w" x="892" y="231" width="3" height="5"/><rect class="w" x="932" y="231" width="3" height="5"/><rect class="w" x="942" y="231" width="3" height="5"/><rect class="w" x="955" y="154" width="3" height="5"/><rect class="w" x="965" y="154" width="3" height="5"/><rect class="w" x="955" y="210" width="3" height="5"/><rect class="w" x="965" y="210" width="3" height="5"/><rect class="w" x="975" y="210" width="3" height="5"/><rect class="w" x="1025" y="145" width="3" height="5"/><rect class="w" x="1015" y="201" width="3" height="5"/><rect class="w" x="995" y="215" width="3" height="5"/><rect class="w" x="1005" y="229" width="3" height="5"/><rect class="w" x="1089" y="50" width="3" height="5"/><rect class="w" x="1059" y="64" width="3" height="5"/><rect class="w" x="1079" y="78" width="3" height="5"/><rect class="w" x="1049" y="92" width="3" height="5"/><rect class="w" x="1089" y="92" width="3" height="5"/><rect class="w" x="1069" y="120" width="3" height="5"/><rect class="w" x="1089" y="134" width="3" height="5"/><rect class="w" x="1049" y="148" width="3" height="5"/><rect class="w" x="1069" y="162" width="3" height="5"/><rect class="w" x="1059" y="218" width="3" height="5"/><rect class="w" x="1113" y="50" width="3" height="5"/><rect class="w" x="1113" y="64" width="3" height="5"/><rect class="w" x="1133" y="64" width="3" height="5"/><rect class="w" x="1143" y="92" width="3" height="5"/><rect class="w" x="1143" y="106" width="3" height="5"/><rect class="w" x="1103" y="134" width="3" height="5"/><rect class="w" x="1133" y="148" width="3" height="5"/><rect class="w" x="1143" y="148" width="3" height="5"/><rect class="w" x="1133" y="162" width="3" height="5"/><rect class="w" x="1103" y="218" width="3" height="5"/><rect class="w" x="1169" y="92" width="3" height="5"/><rect class="w" x="1159" y="106" width="3" height="5"/><rect class="w" x="1199" y="106" width="3" height="5"/><rect class="w" x="1189" y="120" width="3" height="5"/><rect class="w" x="1189" y="134" width="3" height="5"/><rect class="w" x="1179" y="148" width="3" height="5"/><rect class="w" x="1199" y="190" width="3" height="5"/><rect class="w" x="1189" y="204" width="3" height="5"/><rect class="w" x="1169" y="218" width="3" height="5"/><rect class="w" x="1189" y="218" width="3" height="5"/><rect class="w" x="1230" y="105" width="3" height="5"/><rect class="w" x="1260" y="119" width="3" height="5"/><rect class="w" x="1270" y="119" width="3" height="5"/><rect class="w" x="1230" y="133" width="3" height="5"/><rect class="w" x="1260" y="133" width="3" height="5"/><rect class="w" x="1220" y="147" width="3" height="5"/><rect class="w" x="1260" y="147" width="3" height="5"/><rect class="w" x="1240" y="161" width="3" height="5"/><rect class="w" x="1250" y="189" width="3" height="5"/><rect class="w" x="1220" y="203" width="3" height="5"/><rect class="w" x="1260" y="203" width="3" height="5"/><rect class="w" x="1270" y="217" width="3" height="5"/><rect class="w" x="1300" y="120" width="3" height="5"/><rect class="w" x="1310" y="176" width="3" height="5"/><rect class="w" x="1300" y="218" width="3" height="5"/><rect class="w" x="1310" y="218" width="3" height="5"/><rect class="w" x="1356" y="112" width="3" height="5"/><rect class="w" x="1346" y="126" width="3" height="5"/><rect class="w" x="1356" y="126" width="3" height="5"/><rect class="w" x="1346" y="154" width="3" height="5"/><rect class="w" x="1336" y="168" width="3" height="5"/><rect class="w" x="1346" y="168" width="3" height="5"/><rect class="w" x="1346" y="182" width="3" height="5"/><rect class="w" x="1356" y="182" width="3" height="5"/><rect class="w" x="1326" y="210" width="3" height="5"/><rect class="w" x="1373" y="185" width="3" height="5"/><rect class="w" x="1383" y="185" width="3" height="5"/><rect class="w" x="1383" y="199" width="3" height="5"/><rect class="w" x="1383" y="213" width="3" height="5"/><rect class="w" x="1422" y="166" width="3" height="5"/><rect class="w" x="1402" y="194" width="3" height="5"/><rect class="w" x="1412" y="222" width="3" height="5"/><rect class="w" x="1449" y="162" width="3" height="5"/><rect class="w" x="1449" y="204" width="3" height="5"/>
+    </svg>
+  </div>
+
+  <!-- ABOUT THE BOOK -->
+  <section id="book" aria-labelledby="book-h">
+    <div class="wrap grid">
+      <div class="cover" role="img" aria-label="2060 NY by Isaiah Salzman, cover coming">
+        <span>Cover coming</span>
+        <b>2060<br>NY</b>
+        <span>Isaiah Salzman</span>
+      </div>
+      <div>
+        <p class="kicker">About the book</p>
+        <h2 id="book-h">2060 NY</h2>
+        <p class="meta">Adult near-future dystopian thriller with YA crossover appeal · Book 1 of a planned trilogy</p>
+        <div class="blurb">
+          <p>For twenty-one years, an asteroid storm has battered Earth, cutting off the colony on Mars and giving the government its mandate to ban elevators, electric heat, and space travel.</p>
+          <p>Nineteen-year-old Alex Bontari is the best mechanic on a New Jersey oil rig and the loneliest man in Manhattan. Then an old-time New Yorker named Frank Ferguson leads him through a door behind a bookcase and into the sealed subway tunnels, where a resistance called the Last Generation swears the storm is no accident: the government is pulling the rocks down with a massive magnet. Ferguson is building a ship to destroy it, and he needs a mechanic.</p>
+          <p>Alex says yes. But aboveground, his boss makes him the rig's enforcer: fire one coworker every week, or watch his best friend lose his job too. Worse, Alex is good at it.</p>
+          <p>Then a terrifying new account of the storm surfaces: it may be a shield against something out there. And Alex will have to fly straight into it without knowing which story is true.</p>
+        </div>
+        <p class="comps">For readers of <cite>UPGRADE</cite> by Blake Crouch and <cite>THE LAST MURDER AT THE END OF THE WORLD</cite> by Stuart Turton.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE AUTHOR -->
+  <section id="author" class="alt" aria-labelledby="author-h">
+    <div class="wrap grid">
+      <div class="monogram" aria-hidden="true">IS</div>
+      <div>
+        <p class="kicker">About the author</p>
+        <h2 id="author-h">Isaiah Salzman</h2>
+        <div class="blurb">
+          <p>I'm a fourth-generation New Yorker, I'm eighteen, and I live in Israel. I've been writing for as long as I can remember, and 2060 NY is my debut novel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" aria-labelledby="news-h">
+    <div class="wrap signup">
+      <p class="kicker">Newsletter</p>
+      <div class="sample-cta">
+        <a class="btn btn-primary btn-lg" href="Salzman_2060NY_Chapter1.pdf" download type="application/pdf">Read Chapter One (PDF)</a>
+        <p>Step into the tunnels. The first chapter of 2060 NY, free to download.</p>
+      </div>
+      <h2 id="news-h">Stay in the loop</h2>
+      <p>Updates on 2060 NY, news on publication, and the occasional look behind the scenes. A few emails a year, only when there's something worth saying.</p>
+      <!-- TODO: Buttondown username "isaiahsalzman" is pending account creation; the form won't work until that account exists. -->
+      <form action="https://buttondown.com/api/emails/embed-subscribe/isaiahsalzman" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/isaiahsalzman', 'popupwindow')" class="embeddable-buttondown-form">
+        <input type="hidden" name="embed" value="1">
+        <input type="hidden" name="tag" value="website">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+      <p class="fineprint">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h2 id="contact-h">Get in touch</h2>
+      <p>Literary agents, press, and readers: I'd love to hear from you.</p>
+      <p><a class="contact-mail" href="mailto:isaiahsalzman@gmail.com">isaiahsalzman@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Isaiah Salzman. All rights reserved.</span>
+    <span><a href="mailto:isaiahsalzman@gmail.com">isaiahsalzman@gmail.com</a></span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
