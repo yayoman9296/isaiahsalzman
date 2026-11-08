@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yayoman9296.github.io/isaiahsalzman/sitemap.xml
+Sitemap: https://2060ny.com/sitemap.xml
